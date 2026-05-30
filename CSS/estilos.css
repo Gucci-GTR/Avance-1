@@ -1,0 +1,171 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: black;
+}
+
+body{
+   background-color: #ffffff;
+}
+h1{
+    background-color: coral;
+    padding: 10px;
+    width: auto;
+    margin: 0px;
+    font-size: 35px;
+    font-family:sans-serif;
+    text-align: center;
+}
+.fondo1{
+    width:100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+.navegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;  
+}
+.menu_nav{
+    display: flex;
+     list-style: none;
+    background: rgba(0, 0, 0, 0.6); /* Fondo oscuro translúcido para los botones */
+    padding: 6px 10px;
+    border-radius: 30px; /* Hace la forma de píldora/cápsula */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    gap: 5px;
+}
+.menu_nav a{
+    color: #000;
+    text-decoration: none;
+    padding: 8px 20px;
+    font-size: 14px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+.menu_nav a:hover{
+    background: rgba(255, 170, 0, 0.488);
+}
+.menu_nav a:active{
+    background: #bc1c24; /* Rojo asiático/quemado como el de la imagen */
+    color: #fff;
+}
+.carrito{
+  display: inline-block;
+  background: transparent;
+  color: #000;
+  text-decoration: none;
+  padding: 8px 25px;
+  font-size: 14px;
+  border-radius: 20px;
+  border: 2px solid #020202; /* Borde rojo */
+  transition: all 0.3s ease;  
+}
+.carrito:hover{
+    background: rgba(255, 170, 0, 0.488);
+}
+.logo{
+    width: 80px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+footer{
+    background-color: coral;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+.Redes{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+.text{
+    font-family: sans-serif;
+    font-size: 20px;
+    display: flex;
+    margin: 5px 230px 10px 0;
+}
+.descripcion{
+    font-family: sans-serif;
+    margin: 20px 0 5px 230px;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    
+}
+.contenedor{
+    width: 180px;
+    display: flex;
+    padding: 0%;
+    margin: 15px 0 5px 30px;
+    border-radius: 30px;
+    position:absolute;
+    box-shadow: 0 0 10px rgb(235, 157, 3);
+
+}
+.contenedor2{
+    position: absolute;
+    height: 400px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+.parallax{
+    position: relative;
+    width: 100%;
+    background-image: url(/IMAGENES/madera-fondo-2.jpg);
+    background-size: cover;
+    height: 100vh;
+    z-index: -1;
+}
+.titulo{
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 100px;
+}
+.animada{
+    opacity: 0;
+    transition: all 0.5;
+}
+
+.mostrarArriba{
+    animation: mostrarArriba 1s;
+}
+@keyframes mostrarArriba {
+    0% {
+        transform:trasnlateY(60px);
+    }
+    100%{
+        transform:trasnlateY(0);
+    }
+}
+.ref{
+    margin: 10px 50px;
+}
+.imagenes{
+    width: 500px;
+}
+/*.correo{
+    text-align: left;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}*/
